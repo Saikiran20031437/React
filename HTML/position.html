@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position properties</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 200vh;
+        }
+
+        .sp-div {
+            width: 100%;
+            height: 70px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            position: sticky;
+            top: 0px;
+            
+        }
+        .p-div {
+            width: 100%;
+            height: 40px;
+            background-color: blueviolet;
+            border: 2px solid blue;
+           position: sticky;
+           top: 0px;
+        }
+        .c-div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: fixed;
+            bottom: 0px;
+            right:  0px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam, vero quidem facilis,
+     in soluta laboriosam maiores eveniet natus autem nam odio minima iste quos doloribus quasi accusantium enim. Ex?</p>
+     <br>
+
+      <div class="sp-div">
+        <div class="p-div">
+            <div class="c-div">Hello
+            </div>
+        </div>
+      </div>
+     
+    
+</body>
+</html>

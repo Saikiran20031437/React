@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop ups</title>
+</head>
+<body>
+    <h1>Pop ups in JS</h1>
+    <script>
+
+        //Do while 
+        //Creating ATM machine keep asking for until the pin  is correct
+
+        let pin;
+        do {
+             pin = parseInt(prompt("Enter PIN:"));
+        } while (pin !== 1234);
+        document.writeln("Pin correct. Acess Gruanted");
+
+        
+        // alert
+        alert("you opened chrome browser");
+
+        //confirm 
+        let result = confirm("Do you want to delete this item?");
+        console.log(result);
+            if (result) {
+            document.writeln("User clicked OK");
+            } else {
+            document.writeln("User clicked Cancel");
+            }
+            document.writeln("<br>");
+            document.writeln("<br>");
+        //prompt
+        let name = prompt("Enter your name");
+        document.writeln("Hello " , name);
+
+
+    //write program add two numbers collecting from user
+  //collect input from user
+    let num1 = prompt("Enter the number1");
+    let num2 = prompt("Enter the number2");
+
+    //convert input from string to number
+    num1=Number (num1);
+    num2=Number (num2);
+    //Add the numbers
+    sum = num1 + num2;
+    document.writeln(sum);
+</script>
+</body>
+</html>

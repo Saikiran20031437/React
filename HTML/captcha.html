@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form autocomplete="off">
+        <br>
+        <fieldset>
+            <br>
+            <legend>Personal Information</legend>
+        <label for="captcha">Enter captcha :</label>
+        <input type="text" id="captcha" name="captcha" required>
+        <br>
+        <br>
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="pwd">Password :</label>
+        <input type="password" id="pwd" name="Password"placeholder="Enter Password" title="atleast 6 characters long">
+        <br>
+        <br>
+        <label for="mail">Email :</label>
+        <input type="email" name="Email" id="mail" placeholder="Enter Email">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age" max="100" min="1"value="50">
+        </fieldset>
+        <br>
+        <fieldset>
+        <br>
+        <legend>Tech Information</legend>
+        <br>
+        <label for="time">Select Time:</label>
+        <input type="time" name="select Time" id="time">
+        <br>
+        <br>
+        <label for="date">Date:</label>
+        <input type="datetime-local" name="date" id="date">
+        <br>
+        <br>
+        <label for="url">Enter url:</label>
+        <input type="email" name= "url" id="url">
+        <br>
+        <br>
+        <label>chooseTech:</label>
+        <label>
+            <input type="CheckBox" name="Option 1" value="html">HTML
+        </label>
+         <label>
+            <input type="CheckBox" name="Option 2" value="css">CSS
+        </label>
+         <label>
+            <input type="CheckBox" name="Option 3" value="js">JS
+        </label>
+        <br>
+        <br>
+        <label>gender:</label>
+        <label>
+            <input type="radio"name="gender"value="male">male
+        </label>
+         <label>
+            <input type="radio"name="gender"value="female">female
+        </label>
+        <br>
+        <br>
+        <label for="file">Upload Resume:</label>
+        <input type="file" name="Upload"accept=".png,pdf" id="file">
+        <br>
+        <br>
+        <label for="range">Rate (Html 10) :</label>
+        <input type="range" min="1" max="10" name="range" id="range" value="0">
+        <br>
+        <br>
+        <label for="tech">Select tech:</label>
+        <select id="tech" name="tech">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option> 
+          <option value="js">JS</option> 
+        </select>
+        <br>
+        <br>
+        <label for="comments">your Comments:</label>
+        <textarea name="Comments" id="comments" rows="40" columns="40">
+         Leave your Comments...
+        </textarea>
+        <br>
+        </fieldset>
+        <br>
+        <input type="Submit">
+        <input type="Reset">
+        <!-- <button type="Submit">submit</button> -->
+        <!-- <button type="Reset">reset</button> -->
+    </form>
+</body>
+</html>

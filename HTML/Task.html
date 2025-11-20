@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+</head>
+<body>
+    <h2>Student information Form</h2>
+    <form autocomplete="off">
+      <fieldset>
+        <legend>Personal Information</legend>
+      <legend for="name">Full Name:</legend> 
+      <input type="text" name="user name" id="name"placeholder="Enter your Name" required>
+      <br>
+      <br>
+      <legend for="email">Email:</legend> 
+      <input type="url" name="email" id="email"placeholder="Enter your Email" required>
+      <br>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+      <br>
+      <br>
+      <label for="date">Date:</label>
+      <input type="datetime-local" name="date" id="date">
+      <br>
+      <br>
+      <label for="Comments">Short Bio:</label>
+      <textarea name="short bio" id="Comments" rows="20" columns="30" required>
+        write your Short Bio....
+      </textarea>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Gender</legend>
+      <label >Gender</label>
+      <input type="radio"  name="option" value="male" required>Male <br>
+      <input type="radio"  name="option" value="female"required>Female <br>
+      <input type="radio"  name="option" value="Others"required>Others  <br>
+      </fieldset>
+      
+      <br>
+      <br>
+      <fieldset>
+        <legend>Area of Intrest</legend>
+      <label for="choose tech">Choose Tech:</label>
+      <input type="checkbox" name="option1" id="choose tech" value="Web Development" required> web development<br>
+      <input type="checkbox" name="option2" id="choose tech" value="Testing" required> testing<br>
+      <input type="checkbox" name="option3" id="choose tech" value="Data Analatics" required>data anlatics <br>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Programing Skill</legend>
+      <label for="range">Rate your Skill:</label>
+      <input type="range" name="range" id="range" min="0" max="10">
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Uload your Photo</legend>
+      <label for="file">choose file:</label>
+      <input type="file" name="file" accept=".jpeg,png," id="file">
+      </fieldset>
+      <br>
+      <br>
+    </form>
+</body>
+</html>

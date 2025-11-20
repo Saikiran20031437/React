@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+.container{
+    border: 2px solid red;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.container div{
+    width: 100px;
+    height: 50px;
+    border: 2px solid wheat;
+    background-color: yellowgreen;
+}
+
+.container#div1 {
+   
+    flex-basis: 200px;
+}
+
+.container#div2 {
+    
+    flex-basis: 200px;
+}
+
+.container#div3{
+ 
+    flex-basis: auto;
+}
+
+.container#div4{
+   
+    flex-basis: 200px;
+}
+
+.container#div5{
+   
+    flex-basis: 200px;
+}

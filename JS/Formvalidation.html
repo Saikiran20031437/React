@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Email validation
+        let email = document.getElementById("email").value.trim();
+       let emaiRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+       if(!emaiRegex.test(email)){
+            alert(" Invalid email");
+       }else {
+        alert("Valid Email");
+       }
+
+        //Password validation
+       const password = document.getElementById("password").value; 
+
+        // At least one letter/At least one digit At least one special character from @$!%*?&/Minimum length 8
+
+        const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; 
+        if (!passwordPattern.test(password)) { 
+            alert("Password must be at least 8 characters long and include at least one letter and one number."); 
+        } 
+        alert("Password is valid!"); 
+        
+        alert("Form Submitted");
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Semantics</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        header, nav, section, article, aside, footer {
+            background-color: aliceblue;
+            border: 2px solid rgb(109, 128, 0);
+            text-align: center;
+            padding: 20px;
+        }
+        .container{
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .middle{
+            display: flex;
+            gap: 5px;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            gap: 3px;
+        }
+        aside{
+            flex: 1;
+        }
+
+        h1{
+            font-size: 130px;
+            color: rgb(226, 43, 198);
+            background-color: rgb(182, 244, 255);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>DESTINATION TIRP</h1>
+    </header>
+    <nav>
+        <h2>nav bar</h2>
+    </nav>
+    <div class="middle">
+        <div class="left">
+        <section>
+        <h2>Section</h2>
+        </section>
+        <article>
+        <h2>Article</h2>
+        </article>
+    </div>
+    
+
+    <aside>
+        <h2>aside</h2>
+    </aside>
+    </div>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
